@@ -2,12 +2,12 @@
 
 ## 组织关系绑定
 
-1. ### **aiot平台分组与业务平台组织建立映射关系**
+1. ### **AIOT平台分组与业务平台组织建立映射关系**
 
     基本信息：
 
    ```text
-   接口名称：aiot组织查询
+   接口名称：AIOT组织查询
    接口描述：根据AppId和Secret查询aiot组织与业务系统绑定
    注：appId 和secret需要申请，调用方需向服务提供方申请appId 和secret。
    请求地址：
@@ -74,21 +74,16 @@
 
    ```json
    {
-   
       "requestId": "6422806bf92941f79ec78f9bba434c5b",
-   
       "code": "error",
-   
       "message": "系统错误",
-   
       "data": null
-   
    }
    ```
 
    
 
-2. ### aiot平台设备与业务平台组织建立映射关系
+2. ### AIOT平台设备与业务平台组织建立映射关系
 
     基本信息：
 
@@ -159,7 +154,8 @@
                "ipCameraName": "仓库",
                "ipCameraId": "AXb5stqosn_QL8fBuIxP",
                "ipCameraStatus": "1",
-               "lat": ""，"lon": ""
+               "lat": "",
+               "lon": ""
            },
            {
                "deviceId": "测试2",
@@ -167,7 +163,8 @@
                "ipCameraName": "仓库1",
                "ipCameraId": "AXb5stqosn_QL8fBuIxP1",
                "ipCameraStatus": "2",
-               "lat": ""，"lon": ""
+               "lat": "",
+               "lon": ""
            }
        ]
    }
@@ -177,15 +174,10 @@
 
    ```json
    {
-   
       "requestId": "6422806bf92941f79ec78f9bba434c5b",
-   
       "code": "error",
-   
       "message": "系统错误",
-   
       "data": null
-   
    }
    ```
 
@@ -264,14 +256,14 @@
      "aiLive":[
      ],
      "playbackUrl":{
-                     "playbackUrlVideoBetweenPath":"https://aa.bb.com:9443/20166/proxy/ipCameraVideoCollection/streamer/videoBetween",
-               "playbackUrlM3u8Path":"https://aa.bb.com:9443/20166/proxy/ipCameraVideoCollection/streamer/getM3u8"
+         "playbackUrlVideoBetweenPath":"https://aa.bb.com:9443/20166/proxy/ipCameraVideoCollection/streamer/videoBetween",
+         "playbackUrlM3u8Path":"https://aa.bb.com:9443/20166/proxy/ipCameraVideoCollection/streamer/getM3u8"
      },
      "live":[
-     {
-        "wssFlv":"wss://aa.bb.com:9443/ws_live/live_pull/AXb5stqosn_QL8fBuIxP_480_360.flv?app=live&pull_domain=rtmp://127.0.0.1:9240",
-                  "httpFlv":"https://aa.bb.com:9443/live_pull/AXb5stqosn_QL8fBuIxP_480_360.flv?app=live&pull_domain=rtmp://127.0.0.1:9240"
-     }
+        {
+           "wssFlv":"wss://aa.bb.com:9443/ws_live/live_pull/AXb5stqosn_QL8fBuIxP_480_360.flv?app=live&pull_domain=rtmp://127.0.0.1:9240",
+           "httpFlv":"https://aa.bb.com:9443/live_pull/AXb5stqosn_QL8fBuIxP_480_360.flv?app=live&pull_domain=rtmp://127.0.0.1:9240"
+        }
      ]
      },
      "name":"cam1",
@@ -289,15 +281,10 @@
 
    ```json
    {
-   
       "requestId": "6422806bf92941f79ec78f9bba434c5b",
-   
       "code": "error",
-   
       "message": "系统错误",
-   
       "data": null
-   
    }
    ```
 
@@ -368,46 +355,42 @@
    "requestId":"38cd4590051e4894bae7ca0e96bc583c",
    "code":"200",
    "message":"OK",
-   "data":[{
-   "streamUrl":{
-     "aiLive":[
-     ],
-     "playbackUrl":{
-                     "playbackUrlVideoBetweenPath":"https://aa.bb.com:9443/20166/proxy/ipCameraVideoCollection/streamer/videoBetween",
-               "playbackUrlM3u8Path":"https://aa.bb.com:9443/20166/proxy/ipCameraVideoCollection/streamer/getM3u8"
-     },
-     "live":[
-     {
-        "wssFlv":"wss://aa.bb.com:9443/ws_live/live_pull/AXb5stqosn_QL8fBuIxP_480_360.flv?app=live&pull_domain=rtmp://127.0.0.1:9240",
-                  "httpFlv":"https://aa.bb.com:9443/live_pull/AXb5stqosn_QL8fBuIxP_480_360.flv?app=live&pull_domain=rtmp://127.0.0.1:9240"
-     }
+   "data":[
+      {
+      "streamUrl":{
+        "aiLive":[
+        ],
+        "playbackUrl":{
+            "playbackUrlVideoBetweenPath":"https://aa.bb.com:9443/20166/proxy/ipCameraVideoCollection/streamer/videoBetween",
+            "playbackUrlM3u8Path":"https://aa.bb.com:9443/20166/proxy/ipCameraVideoCollection/streamer/getM3u8"
+        },
+        "live":[
+           {
+              "wssFlv":"wss://aa.bb.com:9443/ws_live/live_pull/AXb5stqosn_QL8fBuIxP_480_360.flv?app=live&pull_domain=rtmp://127.0.0.1:9240",
+              "httpFlv":"https://aa.bb.com:9443/live_pull/AXb5stqosn_QL8fBuIxP_480_360.flv?app=live&pull_domain=rtmp://127.0.0.1:9240"
+           }
+        ]
+        },
+        "name":"cam1",
+        "ipCameraId":"AXb5stqosn_QL8fBuIxP",
+        "updateTime":1621856191209,
+        "deviceId":"4cfa68c0109524e5c84c7dee2e7ee3d1",
+        "status":"1",
+        "deviceHostIp":"192.168.3.104",
+        "deviceStreamPort":"1936"
+      }
      ]
-     },
-     "name":"cam1",
-     "ipCameraId":"AXb5stqosn_QL8fBuIxP",
-     "updateTime":1621856191209,
-     "deviceId":"4cfa68c0109524e5c84c7dee2e7ee3d1",
-     "status":"1",
-     "deviceHostIp":"192.168.3.104",
-     "deviceStreamPort":"1936"
    }
-   }
-     ]
    ```
 
    错误返回示例:
 
    ```json
    {
-   
       "requestId": "6422806bf92941f79ec78f9bba434c5b",
-   
       "code": "error",
-   
       "message": "系统错误",
-   
       "data": null
-   
    }
    ```
 
@@ -478,52 +461,48 @@
    "requestId":"38cd4590051e4894bae7ca0e96bc583c",
    "code":"200",
    "message":"OK",
-   "data":[{
-   "streamUrl":{
-     "aiLive":[
-     ],
-     "playbackUrl":{
-                     "playbackUrlVideoBetweenPath":"https://aa.bb.com:9443/20166/proxy/ipCameraVideoCollection/streamer/videoBetween",
-               "playbackUrlM3u8Path":"https://aa.bb.com:9443/20166/proxy/ipCameraVideoCollection/streamer/getM3u8"
-     },
-     "live":[
-     {
-        "wssFlv":"wss://aa.bb.com:9443/ws_live/live_pull/AXb5stqosn_QL8fBuIxP_480_360.flv?app=live&pull_domain=rtmp://127.0.0.1:9240",
-                  "httpFlv":"https://aa.bb.com:9443/live_pull/AXb5stqosn_QL8fBuIxP_480_360.flv?app=live&pull_domain=rtmp://127.0.0.1:9240"
-     }
+   "data":[
+           {
+            "streamUrl":{
+              "aiLive":[
+              ],
+              "playbackUrl":{
+                  "playbackUrlVideoBetweenPath":"https://aa.bb.com:9443/20166/proxy/ipCameraVideoCollection/streamer/videoBetween",
+                  "playbackUrlM3u8Path":"https://aa.bb.com:9443/20166/proxy/ipCameraVideoCollection/streamer/getM3u8"
+              },
+              "live":[
+                 {
+                    "wssFlv":"wss://aa.bb.com:9443/ws_live/live_pull/AXb5stqosn_QL8fBuIxP_480_360.flv?app=live&pull_domain=rtmp://127.0.0.1:9240",
+                    "httpFlv":"https://aa.bb.com:9443/live_pull/AXb5stqosn_QL8fBuIxP_480_360.flv?app=live&pull_domain=rtmp://127.0.0.1:9240"
+                 }
+              ]
+              },
+              "name":"cam1",
+              "ipCameraId":"AXb5stqosn_QL8fBuIxP",
+              "updateTime":1621856191209,
+              "deviceId":"4cfa68c0109524e5c84c7dee2e7ee3d1",
+              "status":"1",
+              "deviceHostIp":"192.168.3.104",
+              "deviceStreamPort":"1936"
+            }
      ]
-     },
-     "name":"cam1",
-     "ipCameraId":"AXb5stqosn_QL8fBuIxP",
-     "updateTime":1621856191209,
-     "deviceId":"4cfa68c0109524e5c84c7dee2e7ee3d1",
-     "status":"1",
-     "deviceHostIp":"192.168.3.104",
-     "deviceStreamPort":"1936"
    }
-   }
-     ]
    ```
 
    错误返回示例:
 
    ```json
    {
-   
       "requestId": "6422806bf92941f79ec78f9bba434c5b",
-   
       "code": "error",
-   
       "message": "系统错误",
-   
       "data": null
-   
    }
    ```
 
-### ai快照信息
+### AI快照信息
 
-1. #### 查询ai类型
+1. #### 查询AI类型
 
    基本信息：
 
@@ -578,52 +557,47 @@
 
    ```json
    {
-         "requestId": "38cd4590051e4894bae7ca0e96bc583c",
-          "code": "200",
-          "message": "OK",
-   "data": [
-     {
-       "name": "AI智能抓拍类型",
-       "id": "0",
-       "parentId": "-1",
-       "aiType": "aiCapture",
-       "children": [
-         {
-           "name": "视频智能分析",
-           "children": [
-             {
-               "children": [],
-               "aiType": "outBoundary",
-               "name": "越界",
-               "id": "6",
-               "parentId": "1"
-             }
-           ],
-           "id": "1",
-           "aiType": "aiVideo",
-           "parentId": "0"
-         }
-       ]
-     }
-   ]
+      "requestId": "38cd4590051e4894bae7ca0e96bc583c",
+       "code": "200",
+       "message": "OK",
+       "data": [
+           {
+             "name": "AI智能抓拍类型",
+             "id": "0",
+             "parentId": "-1",
+             "aiType": "aiCapture",
+             "children": [
+               {
+                 "name": "视频智能分析",
+                 "children": [
+                   {
+                     "children": [],
+                     "aiType": "outBoundary",
+                     "name": "越界",
+                     "id": "6",
+                     "parentId": "1"
+                   }
+                 ],
+                 "id": "1",
+                 "aiType": "aiVideo",
+                 "parentId": "0"
+               }
+             ]
+           }
+         ]
+   }
    ```
 
    错误返回示例:
 
    ```json
    {
-   
       "requestId": "6422806bf92941f79ec78f9bba434c5b",
-   
       "code": "error",
-   
       "message": "系统错误",
-   
       "data": null
-   
    }
    ```
-
    
 
 2. #### 查询api快照地址
@@ -687,15 +661,10 @@
 
    ```json
    {
-   
       "requestId": "6422806bf92941f79ec78f9bba434c5b",
-   
       "code": "error",
-   
       "message": "系统错误",
-   
       "data": null
-   
    }
    ```
 
@@ -733,28 +702,17 @@
    | pageSize  | Int      | true     | 分页大小                   |
 
     请求示例：
-
-   ```json
    https://ip:port/snapshot/pageList
+   ```json
    {
-   
    "startTime": 0,
-   
    "endTime": 1622167455108,
-   
    "deptIds": ["136438"],
-   
    "sensorIds": [],
-   
    "types": ["strangers","noMask","noHat","noGlove","smoking","hiddenCamera","human","noClothes"],
-   
    "page": 1,
-   
    "pageSize": 20
-   
    }
-   
-   
    ```
 
     返回参数头：
@@ -799,33 +757,29 @@
        "code": "success",
        "message": "success",
        "data": {
-   		page": 1,
+   		   "page": 1,
            "pageSize": 20,
            "pageCount": 217,
            "totalCount": 4323,
            "list": [
-               {
-                   "deptId": "201",
-                   "stImgDesc":"{\"PicTime\":\"2021-07-01 11:39:01\",\"PicPath\":\"/data/historyVideo/34dc9e8bf18761c340c1b513f653dbf9/ai_snapshot/wear_kitchen/2021-07-01/11-39-01_32.jpg\",\"ROIS\":[{\"RoiText\":\"Trackxperson^Id_883-\>Yolovx^未戴帽子\",\"Bbox\":\"191,207,69,146\"}]}",
-                   "updateTime": "1625139551671",
-                   "deviceId": "8b2c18da374c5798f22944fb0e71563a",                                
-                   "sensorId": "34dc9e8bf18761c340c1b513f653dbf9",
-                   "aiSceneType": "",
-                   "createTime": "1625139541000",
-                   "deviceGroupId": "",
-                   
-                   "aiType": "noHat",
-                  
-                   "thumbnailPath": "https://aiotshidiandata.shikongshuzhi.com:9443/snap_receive_api/snap/load?path=icon/2021-07-01/325d765b3013f699de283aeed48745ed.jpg",
-                    
-                   "id": "325d765b3013f699de283aeed48745ed",
-                  
-                   "originalPath": "https://aiotshidiandata.shikongshuzhi.com:9443/snap_receive_api/snap/load?path=image/2021-07-01/325d765b3013f699de283aeed48745ed.jpg",
-                   "treeCode": "0,100,101,107,201",
-                   "mp4Path": "https://aiotshidiandata.shikongshuzhi.com:9443/snap_receive_api/snap/load?path=ts/2021-07-01/325d765b3013f699de283aeed48745ed.mp4",
-                   "createDate": "2021-07-01"
-               }
-   ]
+                     {
+                         "deptId": "201",
+                         "stImgDesc":"{\"PicTime\":\"2021-07-01 11:39:01\",\"PicPath\":\"/data/historyVideo/34dc9e8bf18761c340c1b513f653dbf9/ai_snapshot/wear_kitchen/2021-07-01/11-39-01_32.jpg\",\"ROIS\":[{\"RoiText\":\"Trackxperson^Id_883-\\>Yolovx^未戴帽子\",\"Bbox\":\"191,207,69,146\"}]}",
+                         "updateTime": "1625139551671",
+                         "deviceId": "8b2c18da374c5798f22944fb0e71563a",                                
+                         "sensorId": "34dc9e8bf18761c340c1b513f653dbf9",
+                         "aiSceneType": "",
+                         "createTime": "1625139541000",
+                         "deviceGroupId": "",
+                         "aiType": "noHat",
+                         "thumbnailPath": "https://aiotshidiandata.shikongshuzhi.com:9443/snap_receive_api/snap/load?path=icon/2021-07-01/325d765b3013f699de283aeed48745ed.jpg",
+                         "id": "325d765b3013f699de283aeed48745ed",
+                         "originalPath": "https://aiotshidiandata.shikongshuzhi.com:9443/snap_receive_api/snap/load?path=image/2021-07-01/325d765b3013f699de283aeed48745ed.jpg",
+                         "treeCode": "0,100,101,107,201",
+                         "mp4Path": "https://aiotshidiandata.shikongshuzhi.com:9443/snap_receive_api/snap/load?path=ts/2021-07-01/325d765b3013f699de283aeed48745ed.mp4",
+                         "createDate": "2021-07-01"
+                     }
+                   ]
        }
    }
    ```
@@ -834,15 +788,10 @@
 
    ```json
    {
-   
       "requestId": "6422806bf92941f79ec78f9bba434c5b",
-   
       "code": "error",
-   
       "message": "系统错误",
-   
       "data": null
-   
    }
    ```
 
@@ -907,15 +856,10 @@ https://ip:port/snapshot/deleteById?idList=%s
 
 ```json
 {
-
    "requestId": "6422806bf92941f79ec78f9bba434c5b",
-
    "code": "error",
-
    "message": "系统错误",
-
    "data": null
-
 }
 ```
 
